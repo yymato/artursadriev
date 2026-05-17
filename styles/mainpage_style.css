@@ -97,12 +97,14 @@
 
 /* --- Стрелочка вниз --- */
 .arrow-down {
-    font-size: 3rem;
-    display: block;
-    margin: 0 auto;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
     animation: bounce 2s infinite;
     cursor: pointer;
-    margin-top: 30px;
+    z-index: 3;
 }
 
 .arrow-down:hover {
@@ -119,5 +121,36 @@
     }
     60% {
         transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+    }
+
+    .arrow-down {
+        bottom: 30px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.75rem;
+    }
+
+    .arrow-down {
+        bottom: 20px;
+        font-size: 1.8rem;
     }
 }
