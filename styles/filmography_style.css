@@ -1,0 +1,76 @@
+/* --- Стили для Filmography --- */
+.filmography-section {
+    padding: 60px 20px 100px 20px;
+    background-color: #14171c; /* Темный фон, как в секции Most Recent Film */
+    min-height: 80vh;
+}
+
+.filmography-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки */
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.film-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Плеер (адаптивный 16:9) */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #000; /* Черный фон, пока видео грузится */
+    margin-bottom: 25px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Заголовки фильмов */
+.film-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Описание */
+.film-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d1d1d1;
+    max-width: 500px; /* Чтобы текст не растягивался слишком широко */
+}
+
+/* --- Адаптивность (Мобильные устройства) --- */
+@media (max-width: 900px) {
+    .filmography-grid {
+        grid-template-columns: 1fr; /* Одна колонка на телефонах */
+        gap: 50px;
+    }
+
+    .film-title {
+        font-size: 1.8rem;
+    }
+
+    .film-description {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+}

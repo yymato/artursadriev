@@ -1,0 +1,99 @@
+/* --- Contact Section --- */
+.contact-section {
+    padding: 120px 20px 80px 20px; /* Отступ сверху для навигации */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14171c;
+}
+
+.contact-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Заголовок */
+.contact-container h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+/* Список контактов */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.contact-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap; /* Для адаптивности на телефонах */
+    align-items: center;
+    gap: 8px;
+}
+
+/* Метка (personal:, business:, etc.) */
+.contact-item .label {
+    color: #e0e0e0;
+    font-weight: 600;
+    min-width: 80px;
+}
+
+/* Ссылки */
+.contact-item a {
+    color: #ffffff;
+    text-decoration: underline; /* Подчеркивание как на скриншоте */
+    text-underline-offset: 3px;
+    transition: color 0.3s;
+    word-break: break-all; /* Чтобы длинные ссылки не ломали верстку */
+}
+
+.contact-item a:hover {
+    color: #ff4d4d;
+}
+
+/* --- Адаптивность --- */
+@media (max-width: 900px) {
+    .contact-section {
+        padding-top: 100px;
+    }
+
+    .contact-container h1 {
+        font-size: 3.5rem;
+        margin-bottom: 40px;
+    }
+
+    .contact-item {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .contact-item .label {
+        min-width: auto;
+        font-size: 0.9rem;
+        color: #a0a0a0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container h1 {
+        font-size: 2.8rem;
+    }
+
+    .contact-item {
+        font-size: 0.9rem;
+    }
+}

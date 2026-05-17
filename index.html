@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artur Sadriev - Портфолио</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/major.css">
+    <link rel="stylesheet" href="styles/mainpage_style.css">
+</head>
+<body>
+
+    <!-- Навигационная панель (верхняя) -->
+    <nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Скрываем стандартные ссылки на мобильных, они теперь в панели -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="filmography.html">Filmography</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Затемняющий слой -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Боковая панель меню (выезжающая) -->
+    <div class="mobile-menu-panel" id="mobile-menu">
+        <div class="close-btn" id="close-menu">✕</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="filmography.html">Filmography</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Секция -->
+    <header class="hero">
+        <div class="hero-image-container">
+            <img src="" alt="Cinematic Red Background">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>RYAN CREAN</h1>
+            <p>WRITER | DIRECTOR | CINEMATOGRAPHER | PRODUCER | EDITOR</p>
+        </div>
+    </header>
+
+    <!-- Секция "Последний фильм" -->
+    <section class="recent-film">
+    <h2>MOST RECENT FILM</h2>
+
+    <!-- Контейнер для плеера (нужен для адаптивности) -->
+        <div class="video-container">
+          <iframe
+            src="https://rutube.ru/play/embed/3d88566caff7e5d4f5a5eadf5652abf6"
+            style="border: none;"
+            allow="clipboard-write; autoplay"
+            allowFullScreen
+          ></iframe>
+        </div>
+</section>
+
+    <script src="scripts/major.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artur Sadriev - Портфолио</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/major.css">
+    <link rel="stylesheet" href="styles/filmography_style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Скрываем стандартные ссылки на мобильных, они теперь в панели -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="filmography.html">Filmography</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-menu-panel" id="mobile-menu">
+        <div class="close-btn" id="close-menu">✕</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="filmography.html">Filmography</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Затемняющий слой -->
+    <div class="overlay" id="overlay"></div>
+
+        <!-- Основной контент страницы Filmography -->
+    <section class="filmography-section">
+        <div class="filmography-grid">
+
+            <!-- Карточка фильма 1 -->
+            <div class="film-item">
+                <div class="video-wrapper">
+                      <iframe
+                        src="https://rutube.ru/play/embed/a6449d82f0ed7a978db56394fa3e9fe0"
+                        style="border: none;"
+                        allow="clipboard-write; autoplay"
+                        allowFullScreen
+                      ></iframe>
+
+                </div>
+                <h3 class="film-title">"WHEN EVERYTHING WENT STILL"</h3>
+                <p class="film-description">
+                    A family drama, following Shawn, a man struggling with depression and ptsd. - Written, Directed, Shot, Produced, & Edited by Ryan Crean
+                </p>
+            </div>
+
+            <!-- Карточка фильма 2 -->
+            <div class="film-item">
+                <div class="video-wrapper">
+                  <iframe
+                    src="https://rutube.ru/play/embed/c929fbf04deeadc95714b41aa600818c"
+                    style="border: none;"
+                    allow="clipboard-write; autoplay"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <h3 class="film-title">"MY FATHER'S JEANS"</h3>
+                <p class="film-description">
+                    A boy hears his parents fighting, things later go south, and his life is forever changed. - Written, Directed, Shot, Produced, & Edited by Ryan Crean
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="scripts/major.js"></script>
+</html>
