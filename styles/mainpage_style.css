@@ -102,7 +102,7 @@
     margin: 0 auto;
     animation: bounce 2s infinite;
     cursor: pointer;
-    margin-top: -30px;
+    margin-top: 30px;
 }
 
 .arrow-down:hover {
