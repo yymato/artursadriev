@@ -99,12 +99,10 @@
 .arrow-down {
     font-size: 3rem;
     display: block;
-    margin: 30px auto 0 auto; /* Отступ сверху и центрирование */
+    margin: 0 auto;
     animation: bounce 2s infinite;
     cursor: pointer;
-    color: #ffffff;
-    opacity: 0.7;
-    transition: opacity 0.3s;
+    margin-top: -30px;
 }
 
 .arrow-down:hover {
